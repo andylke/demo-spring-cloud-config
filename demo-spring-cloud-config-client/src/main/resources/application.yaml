@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo-config-client
+  profiles:
+    active: development
+  config:
+    import: configserver:http://localhost:8888
+  cloud:
+    config:
+      label: main
